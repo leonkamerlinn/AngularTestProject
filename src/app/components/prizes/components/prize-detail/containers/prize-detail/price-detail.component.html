@@ -1,0 +1,13 @@
+<div *ngIf="(state$ | async).showLoadingSpinner">
+    Loading ...
+</div>
+<mat-card class="example-card" *ngIf="!(state$ | async).showLoadingSpinner">
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{ (state$ | async).detail.name }}</mat-card-title>
+        <mat-card-subtitle>{{ (state$ | async).detail.subtitle }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="getAbsoluteImageUrl((state$ | async).detail.image_uri)" alt="">
+    <mat-card-content [innerHTML]="(state$ | async).detail.description">
+    </mat-card-content>
+</mat-card>
