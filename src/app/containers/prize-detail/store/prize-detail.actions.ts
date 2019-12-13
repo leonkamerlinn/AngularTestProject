@@ -1,5 +1,5 @@
 import {Action} from '@ngrx/store';
-import {PrizeDetail} from '../../../../../containers/models/prize-detail';
+import {PrizeDetail} from '../../prizes/models/prize-detail';
 
 
 export enum PrizeDetailActionTypes {

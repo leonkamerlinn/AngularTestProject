@@ -11,8 +11,8 @@ import {StoreRouterConnectingModule} from '@ngrx/router-store';
 import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {environment} from '../environments/environment';
 import {RouterModule, Routes} from '@angular/router';
-import {PrizesEffects} from './components/prizes/containers/store/prizes.effects';
-import {PrizeDetailEffects} from './components/prizes/components/prize-detail/containers/prize-detail/store/prize-detail.effects';
+import {PrizesEffects} from './containers/prizes/store/prizes.effects';
+import {PrizeDetailEffects} from './containers/prize-detail/store/prize-detail.effects';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
@@ -24,7 +24,7 @@ const routes: Routes = [
     },
     {
         path: 'prizes',
-        loadChildren: './components/prizes/prizes.module#PrizesModule',
+        loadChildren: './containers/prizes/prizes.module#PrizesModule',
     },
     {
         path: '**',

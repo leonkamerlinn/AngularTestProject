@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {Actions, Effect, ofType} from '@ngrx/effects';
 import {Store} from '@ngrx/store';
 import {PrizesService} from '../prizes.service';
-import {AppState} from '../../../../app-state.model';
+import {AppState} from '../../../app-state.model';
 import {HideLoadingSpinner, LoadContent, LoadContentFailure, LoadContentSuccess, PrizesActionTypes} from './prizes.actions';
 import {catchError, map, mergeMap} from 'rxjs/operators';
 import {from, of} from 'rxjs';

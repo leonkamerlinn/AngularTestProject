@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
-import {PrizesComponent} from './containers/prizes/prizes.component';
-import {PrizesGuard} from './containers/prizes.guard';
+import {PrizesComponent} from './prizes.component';
+import {PrizesGuard} from './prizes.guard';
 import {MatListModule} from '@angular/material';
 import {FlexModule} from '@angular/flex-layout';
 
@@ -14,7 +14,7 @@ const routes: Routes = [
         children: [
             {
                 path: ':prizeId',
-                loadChildren: './components/prize-detail/prize-detail.module#PrizeDetailModule',
+                loadChildren: '../prize-detail/prize-detail.module#PrizeDetailModule',
             },
         ]
     },

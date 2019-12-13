@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {Store} from '@ngrx/store';
-import {AppState} from '../../../../app-state.model';
+import {AppState} from '../../app-state.model';
 import {Observable} from 'rxjs';
-import {PrizeItem} from '../models/prize-item';
-import * as fromReducer from '../store/prizes.reducer';
-import {PrizesState} from '../store/prizes.reducer';
+import {PrizeItem} from './models/prize-item';
+import * as fromReducer from './store/prizes.reducer';
+import {PrizesState} from './store/prizes.reducer';
 
 
 @Component({
@@ -20,8 +20,6 @@ export class PrizesComponent implements OnInit {
         this.state$ = this.store.select(appState => appState.prizesState);
         this.items$  = this.store.select(fromReducer.selectAll);
     }
-
-
 
     ngOnInit() {
     }

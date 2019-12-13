@@ -2,8 +2,8 @@ import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot} from '@angular/router';
 import {Observable, of} from 'rxjs';
 import {Store} from '@ngrx/store';
-import {PrizesService} from '../../../../containers/prizes.service';
-import {AppState} from '../../../../../../app-state.model';
+import {PrizesService} from '../prizes/prizes.service';
+import {AppState} from '../../app-state.model';
 import {switchMap, take} from 'rxjs/operators';
 import {LoadItem} from './store/prize-detail.actions';
 

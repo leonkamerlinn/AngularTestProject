@@ -3,7 +3,7 @@ import {ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot} from '@angular
 import {Observable, of} from 'rxjs';
 import {PrizesService} from './prizes.service';
 import {Store} from '@ngrx/store';
-import {AppState} from '../../../app-state.model';
+import {AppState} from '../../app-state.model';
 import {LoadContent} from './store/prizes.actions';
 
 

@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {PriceDetailComponent} from './containers/prize-detail/price-detail.component';
+import {PriceDetailComponent} from './price-detail.component';
 import {RouterModule, Routes} from '@angular/router';
-import {PrizeDetailGuard} from './containers/prize-detail/prize-detail.guard';
+import {PrizeDetailGuard} from './prize-detail.guard';
 import {MatCardModule} from '@angular/material';
 
 const routes: Routes = [

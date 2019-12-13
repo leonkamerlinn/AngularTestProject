@@ -1,4 +1,4 @@
-import {PrizeDetail} from '../../../../../containers/models/prize-detail';
+import {PrizeDetail} from '../../prizes/models/prize-detail';
 import {PrizeDetailActions, PrizeDetailActionTypes} from './prize-detail.actions';
 
 
