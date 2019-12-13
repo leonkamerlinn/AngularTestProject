@@ -28,7 +28,7 @@ const routes: Routes = [
     },
     {
         path: '**',
-        loadChildren: './components/not-found/not-found.module#NotFoundModule',
+        loadChildren: './containers/not-found/not-found.module#NotFoundModule',
     }
 ];
 
